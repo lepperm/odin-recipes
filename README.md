@@ -6,7 +6,7 @@ Odin Recipes is a simple collection of recipes, including the ingredients and st
 
 ## Assignment Criteria
 
-- [ ] Iteration 1: Initial structure
+- [x] Iteration 1: Initial structure
 
   1. Within the odin-recipes directory, create an `index.html` file.
   1. Fill it out with the usual boilerplate HTML and add an `h1` heading “Odin Recipes” to the body.
