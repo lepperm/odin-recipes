@@ -2,6 +2,8 @@
 
 Odin Recipes is a simple collection of recipes, including the ingredients and steps for each recipe.
 
+View the live site at <https://lepperm.github.io/odin-recipes/>.
+
 This project is part of the Foundations curriculum from [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/recipes).
 
 ## Phase 1 - HTML
