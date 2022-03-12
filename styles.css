@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Montserrat&display=swap");
 
+:root {
+  --primary-bg-color: rgb(10, 10, 10);
+  --primary-text-color: rgb(196, 196, 196);
+  --link-text-color: rgb(145, 145, 255);
+  --link-text-hover: rgb(99, 99, 252);
+}
+
 * {
   font-family: Montserrat, sans-serif;
   line-height: normal;
 }
 
 body {
-  color: rgb(196, 196, 196);
-  background-color: rgb(10, 10, 10);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 
 h1 {
@@ -15,18 +22,33 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  color: var(--link-text-color);
+  border-bottom: 1px solid var(--link-text-color);
+}
+
+a:hover {
+  color: var(--link-text-hover);
+  border-bottom: 1px solid var(--link-text-hover);
+  transition: 300ms;
+}
+
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
-  border-radius: 8px;
 }
 
 /* Wrapper for recipe hero image and attribution */
 .img-recipe {
   position: relative;
   width: 80vw;
+  max-height: 400px;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
 }
 
 .img-attribution {
@@ -34,4 +56,7 @@ img {
   bottom: 0px;
   right: 12.8px;
   font-size: 0.8rem;
+  background-color: hsla(0, 0%, 0%, 0.65);
+  padding: 4px;
+  border-radius: 4px;
 }
