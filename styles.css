@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Montserrat&display=swap");
+
+* {
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+}
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(196, 196, 196);
   background-color: rgb(10, 10, 10);
 }
 
 h1 {
+  font-family: Fredoka, sans-serif;
   text-align: center;
 }
