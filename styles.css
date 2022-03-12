@@ -14,3 +14,24 @@ h1 {
   font-family: Fredoka, sans-serif;
   text-align: center;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Wrapper for recipe hero image and attribution */
+.img-recipe {
+  position: relative;
+  width: 80vw;
+}
+
+.img-attribution {
+  position: absolute;
+  bottom: 0px;
+  right: 12.8px;
+  font-size: 0.8rem;
+}
