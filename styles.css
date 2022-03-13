@@ -40,6 +40,35 @@ img {
   width: 100%;
 }
 
+.app-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.app-bar > h1 {
+  flex: flex-grow;
+}
+
+.app-bar > .left-action,
+.app-bar > .right-spacer {
+  min-width: 2rem;
+  max-width: 2rem;
+  align-self: stretch;
+}
+
+.nav-icon {
+  color: var(--link-text-color);
+}
+
+.nav-icon:hover {
+  color: var(--link-text-hover);
+  transition: 300ms;
+}
+
 /* Wrapper for recipe hero image and attribution */
 .img-recipe {
   position: relative;
