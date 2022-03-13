@@ -40,6 +40,7 @@ img {
   width: 100%;
 }
 
+/* The app-bar is a flexbox consisting of a left-action, an h1, and a right-spacer */
 .app-bar {
   display: flex;
   flex-flow: row nowrap;
@@ -58,6 +59,12 @@ img {
   min-width: 2rem;
   max-width: 2rem;
   align-self: stretch;
+}
+
+.left-action > a {
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 0px solid;
 }
 
 .nav-icon {
@@ -84,6 +91,7 @@ img {
   position: absolute;
   bottom: 0px;
   right: 12.8px;
+  max-width: 40%;
   font-size: 0.8rem;
   background-color: hsla(0, 0%, 0%, 0.65);
   padding: 4px;
