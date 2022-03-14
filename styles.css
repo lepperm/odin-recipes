@@ -14,73 +14,6 @@
   line-height: normal;
 }
 
-html {
-  position: relative;
-  min-height: 100vh;
-}
-
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
-  margin: 8px 0px 0px 0px;
-  padding-bottom: 3rem;
-}
-
-h1 {
-  font-family: Fredoka, sans-serif;
-  text-align: center;
-  padding: 0.5rem 0px;
-}
-
-h2,
-h3 {
-  text-align: center;
-  padding-top: 1rem;
-}
-
-h4 {
-  margin-left: 1rem;
-}
-
-p,
-ol,
-ul {
-  margin: 0px 2rem;
-}
-
-li:not(:last-child),
-p {
-  margin-bottom: 0.75rem;
-}
-
-a {
-  text-decoration: none;
-  padding-bottom: 2px;
-  color: var(--link-text-color);
-  border-bottom: 1px solid var(--link-text-color);
-}
-
-a:hover {
-  color: var(--link-text-hover);
-  border-bottom: 1px solid var(--link-text-hover);
-  transition: 300ms;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1.5rem;
-  padding: 0.25rem 0px;
-  text-align: center;
-  background-color: var(--secondary-bg-color);
-}
-
 /* The app-bar is a flexbox consisting of a left-action, an h1, and a right-spacer */
 .app-bar {
   display: flex;
@@ -192,6 +125,7 @@ footer {
   font-size: 0.8rem;
   background-color: hsla(0, 0%, 0%, 0.65);
   padding: 4px;
+  margin-right: 0px;
   border-radius: 4px;
 }
 
@@ -202,4 +136,71 @@ footer {
   right: 1.5rem;
   z-index: 2;
   transition: 0.2s;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  margin: 8px 0px 0px 0px;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-family: Fredoka, sans-serif;
+  text-align: center;
+  padding: 0.5rem 0px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+h4 {
+  margin-left: 1rem;
+}
+
+p,
+ol,
+ul {
+  margin: 0px 2rem;
+}
+
+li:not(:last-child),
+p {
+  margin-bottom: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  color: var(--link-text-color);
+  border-bottom: 1px solid var(--link-text-color);
+}
+
+a:hover {
+  color: var(--link-text-hover);
+  border-bottom: 1px solid var(--link-text-hover);
+  transition: 300ms;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+  padding: 0.25rem 0px;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
 }
