@@ -8,6 +8,7 @@
 }
 
 * {
+  scroll-behavior: smooth;
   font-family: Montserrat, sans-serif;
   line-height: normal;
 }
@@ -65,7 +66,9 @@ img {
   align-self: stretch;
 }
 
-.left-action > a {
+.left-action > a,
+.remove-link-decorations,
+.remove-link-decorations:hover {
   text-decoration: none;
   padding-bottom: 0px;
   border-bottom: 0px solid;
@@ -78,6 +81,16 @@ img {
 .nav-icon:hover {
   color: var(--link-text-hover);
   transition: 300ms;
+}
+
+.remove-link-decorations:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.remove-link-decorations:active {
+  transform: scale(0.9);
+  transition: 100ms;
 }
 
 /* Wrapper for recipe hero image and attribution */
@@ -100,4 +113,12 @@ img {
   background-color: hsla(0, 0%, 0%, 0.65);
   padding: 4px;
   border-radius: 4px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.5rem;
+  z-index: 2;
+  transition: 0.2s;
 }
