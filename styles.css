@@ -2,6 +2,7 @@
 
 :root {
   --primary-bg-color: rgb(10, 10, 10);
+  --secondary-bg-color: rgb(17, 17, 17);
   --primary-text-color: rgb(196, 196, 196);
   --link-text-color: rgb(145, 145, 255);
   --link-text-hover: rgb(99, 99, 252);
@@ -13,14 +14,28 @@
   line-height: normal;
 }
 
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  margin: 8px 0px 0px 0px;
+  padding-bottom: 3rem;
 }
 
 h1 {
   font-family: Fredoka, sans-serif;
   text-align: center;
+  padding: 0.5rem 0px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  padding-top: 1rem;
 }
 
 li:not(:last-child) {
@@ -45,6 +60,16 @@ img {
   width: 100%;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+  padding: 0.25rem 0px;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+}
+
 /* The app-bar is a flexbox consisting of a left-action, an h1, and a right-spacer */
 .app-bar {
   display: flex;
@@ -61,6 +86,7 @@ img {
 
 .app-bar > .left-action,
 .app-bar > .right-spacer {
+  padding: 0px 1rem;
   min-width: 2rem;
   max-width: 2rem;
   align-self: stretch;
@@ -93,6 +119,49 @@ img {
   transition: 100ms;
 }
 
+/* Main menu recipe selection list */
+.recipe-card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  gap: 2rem;
+}
+
+.recipe-card,
+.recipe-card:hover {
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 0px solid;
+}
+
+.recipe-card {
+  position: relative;
+  min-width: 8rem;
+  max-width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+  border: 1px solid var(--primary-text-color);
+}
+
+.recipe-card-label {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  background-color: hsla(0, 0%, 0%, 0.65);
+  padding: 4px;
+  border-radius: 4px;
+}
+
 /* Wrapper for recipe hero image and attribution */
 .img-recipe {
   position: relative;
@@ -115,6 +184,7 @@ img {
   border-radius: 4px;
 }
 
+/* Scroll-to-top button floating in lower-right corner of recipe pages */
 .scroll-to-top {
   position: fixed;
   bottom: 1.2rem;

@@ -13,29 +13,45 @@
       <h1>Odin Recipes</h1>
       <div class="right-spacer"></div>
     </div>
-    <p>
-      Welcome to Odin Recipes! Please select from our list of recipes below:
+    <p style="padding: 1rem 0px; text-align: center">
+      Welcome to Odin Recipes!<br />Please select from our list of recipes
+      below:
     </p>
-    <ul>
-      <li><a href="./recipes/castella-cake.html">Castella Cake</a></li>
-      <li>
-        <a href="./recipes/matcha-roll-cake.html">
-          Matcha Roll Cake with Adzuki Cream
-        </a>
-      </li>
-      <li><a href="./recipes/souffle-pancakes.html">Soufflé Pancakes</a></li>
-    </ul>
-    <img
-      src="../img/castella-cake.jpg"
-      alt="Castella cake being sprinkled with powdered sugar."
-    />
-    <img
-      src="../img/matcha-roll-cake.jpg"
-      alt="Two slices of matcha roll cake, revealing the adzuki cream filling."
-    />
-    <img
-      src="../img/souffle-pancakes.jpg"
-      alt="A single soufflé pancake on a plate, dusted with powdered sugar."
-    />
+    <div class="recipe-card-wrapper">
+      <a
+        class="recipe-card"
+        href="./recipes/castella-cake.html"
+        aria-label="View the recipe for Castella Cake"
+      >
+        <img
+          src="../img/castella-cake.jpg"
+          alt="Castella cake being sprinkled with powdered sugar."
+        />
+        <p class="recipe-card-label">Castella Cake</p>
+      </a>
+      <a
+        class="recipe-card"
+        href="./recipes/matcha-roll-cake.html"
+        aria-label="View the recipe for Matcha Roll Cake with Adzuki Cream"
+      >
+        <img
+          src="../img/matcha-roll-cake.jpg"
+          alt="Two slices of matcha roll cake, revealing the adzuki cream filling."
+        />
+        <p class="recipe-card-label">Matcha Roll Cake with Adzuki Cream</p>
+      </a>
+      <a
+        class="recipe-card"
+        href="./recipes/souffle-pancakes.html"
+        aria-label="View the recipe for Soufflé Pancakes"
+      >
+        <img
+          src="../img/souffle-pancakes.jpg"
+          alt="A single soufflé pancake on a plate, dusted with powdered sugar."
+        />
+        <p class="recipe-card-label">Soufflé Pancakes</p>
+      </a>
+    </div>
+    <footer>© 2022, Max Lepper</footer>
   </body>
 </html>
