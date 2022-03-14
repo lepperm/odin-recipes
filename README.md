@@ -33,11 +33,13 @@ The requirements can be found [in the lesson page on The Odin Project](https://w
 
 ### Assignment Criteria
 
-- [ ] Add styling using the external CSS method
+- [x] Add styling using the external CSS method
 
 ### What I Learned
 
-This section to be completed upon project submission.
+I tried to experiment with a few different exercises, including animations, accessibility, and flex. While I likely spent longer on this project than was intended, I feel overall pleased with the final result. There are some quirks that could likely be improved, but this was excellent practice towards cascading rules and keeping selectors organized.
+
+Please feel free to open issues with any notes for improvement!
 
 ## Development Status
 
